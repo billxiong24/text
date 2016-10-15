@@ -29,7 +29,7 @@ public class Main {
             return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
 
-    get("/db", (req, res) -> {
+    /*get("/db", (req, res) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();
       try {
@@ -53,8 +53,19 @@ public class Main {
       } finally {
         if (connection != null) try{connection.close();} catch(SQLException e){}
       }
+    }, new FreeMarkerEngine());*/
+
+    get("/billdb", (req, res) -> {
+        Map<String, Object> attributes = new HashMap<String, Object>();
+        attributes.put("message", "Bill is gay");
+        return new ModelAndView(attributes, "billdb.ftl");
     }, new FreeMarkerEngine());
 
+  }
+
+  public static String dbmeth() {
+
+      return "";
   }
 
 }
