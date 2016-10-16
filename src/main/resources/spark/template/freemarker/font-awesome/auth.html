@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Duke Exchange</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/auth.css" rel="stylesheet">
+
+</head>
+
+<body>
+        <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="logo">
+            <a href="auth.html">Duke <span class="smaller">EXCHANGE</span></a>
+        </div>
+
+        </nav>
+
+        
+        <div class="borders">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a href="index.html">
+                        <!-- <i class="fa fa-sign-out"></i> --> 
+                        <button class="nav-buttons btn">Home</button>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+    
+    <div class = "warning">
+        <span id="logo" style="color: #001A57; opacity: 1.0;">Duke Exchange</span>
+        <div style="margin-top: 10px">
+            <p class = "smaller">ONE ACCOUNT. ALL OF DUKE.</p>
+        </div>
+    </div>
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div class = "image"><img src="img/login.png"></div>
+        <div class="log">
+
+            <p>Enter your NetID and password to login.</p>
+            <form class="m-t" role="form" action="home.html">
+                <div class="form-group">
+                    <input type="text"; class="form-control" placeholder="NetID">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <button id="log"; type="submit" class="btn btn-primary block full-width m-b">Login</button>
+
+                <a href="#"><small>Forgot password?</small></a>
+        </div>
+    </div>
+
+
+</body>
+<script src="js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript">
+    document.getElementById("log").addEventListener("click", function click(){
+        window.location.href = "home.html";
+    });
+</script>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Duke Exchange</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+   
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="logo">
+            <a href="index.html">Duke <span class="smaller">EXCHANGE</span></a>
+        </div>
+        </nav>
+
+        
+        <div class="borders">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <ul class="nav navbar-top-links navbar-right">
+                 <li class="dropdown" style="">
+                    <a href="auth.html">
+                        <!-- <i class="fa fa-sign-out"></i> --> 
+            <button class="nav-buttons btn" style=""> Sign up</button>
+                    </a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="auth.html">
+                       <!-- <i class="fa fa-sign-out"></i> --> 
+                        <button class="nav-buttons btn" style=""> Log in</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="foobar">
+            <span>Duke Exchange</span>
+        </div>
+         
+        <div class="search-form animated fadeInDown">
+            <form action="index.html" method="get">
+                <div class="input-group">
+                    <input type="text" name="search" class="form-control input-lg foc">
+                    <div class="input-group-btn">
+                        <button class="btn btn-lg btn-primary" type="submit">
+                            <img src="img/white_search.png">
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bottom-bar">
+            <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2016 Duke Exchange</div>
+            <div class="misc" style="margin-right: 90px; border: none">
+            <a>Search Settings</a></div>
+            <div class="misc" style="padding-right: 10px;"><a>About us</a></div> 
+        </div>
+    
+
+    <!-- Mainly scripts -->
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                // some code..
+            }
+            if($(window).width() < 620){
+                $(".borders").css("float", "right");
+                $('.foobar').css("font-size", "20px");
+                $(".bottom-bar").hide();
+            }
+            $(window).resize(function(){
+                if($(this).width() < 620){
+                    $(".borders").css("float", "right");
+                    $(".bottom-bar").hide();
+                    $('.foobar').css("font-size", "20px");
+                }
+                else{
+                    $(".bottom-bar").show();
+                    $('.foobar').css("font-size", "70px");
+                }
+            });
+        });
+        $(".btn-primary").mouseover(function(){
+            $(".btn-primary").css("background-color", "#001A57");
+        })
+        $(".btn-primary").mouseout(function(){
+            $(".btn-primary").css("background-color", "#001A57");
+        })
+
+    </script>
+</body>
+</html>

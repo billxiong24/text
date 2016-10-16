@@ -2,6 +2,7 @@
   <library name="Maven: com.heroku.sdk:heroku-jdbc:0.1.1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/com/heroku/sdk/heroku-jdbc/0.1.1/heroku-jdbc-0.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/mongo-java-driver-3.0.4.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/com/heroku/sdk/heroku-jdbc/0.1.1/heroku-jdbc-0.1.1-javadoc.jar!/" />
