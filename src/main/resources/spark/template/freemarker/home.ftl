@@ -205,7 +205,7 @@
 
         </div>
         <div class="foobar float-e-margins text-center animated fadeInDown">
-                <div style="margin-bottom: 20px;">Welcome, William!</div>
+                <div style="margin-bottom: 20px;">Welcome, ${name}!</div>
                 <form method="post" action="/home.ftl">
                     <div class="input-group">
                     

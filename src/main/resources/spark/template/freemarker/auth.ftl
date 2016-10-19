@@ -63,14 +63,15 @@
         <div class="log">
 
             <p>Enter your NetID and password to login.</p>
+            <p style="color: darkred">${error}</p>
             <form method="post" class="m-t" role="form" action="/home.ftl">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="NetID">
+                    <input name = "username" type="text" class="form-control" placeholder="NetID">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input name = "password" type="password" class="form-control" placeholder="Password">
                 </div>
-                <button method = "post" id="log" type="submit" action="/home.ftl" class="btn btn-primary block full-width m-b">Login</button>
+                <button id="log" type="submit" class="btn btn-primary block full-width m-b">Login</button>
                 <a href="#"><small>Forgot password?</small></a>
             </form>
         </div>

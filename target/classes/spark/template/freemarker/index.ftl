@@ -41,7 +41,7 @@
                                 <a aria-expanded="false" role="button" href="data.html"> My Account</a>
                             </li> -->
                             <li>
-                                <a aria-expanded="false" role="button" href="/auth.ftl"> Sign up</a>
+                                <a aria-expanded="false" role="button" href="/signup.ftl"> Sign up</a>
                             </li>
                             <li>
                                 <a href="/auth.ftl">
